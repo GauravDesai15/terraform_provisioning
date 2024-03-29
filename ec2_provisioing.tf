@@ -10,8 +10,8 @@ provider "aws" {
 
 # Define the Vault provider to access secrets
 provider "vault" {
-  address = "http://127.0.0.1:8200" # Replace with your Vault server address
-  token   = "hvs.CAESIOhvuMV82yDIiUJKkotlZWl5MzC91bOaLBZxNiZ-MGBkGh4KHGh2cy50ZzhuUkFJTWRoVm9lbEV4SURRRnZtdXg"        # Replace with a valid Vault token
+  address = "https://portal.cloud.hashicorp.com:8200/services/secrets/apps/provisioning/integrations?project_id=fa2159af-c552-4572-84bc-0fd4b7962a3a" # Replace with your Vault server address
+  token   = "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"        # Replace with a valid Vault token
 }
 
 # Retrieve AWS access keys from Vault
